@@ -279,3 +279,61 @@
         transform: translateX(-50%) scale(1);
     }
 }
+
+ /* Responsive */
+        @media (max-width: 768px) {
+            
+            .confirmation-container {
+                padding: 40px 20px;
+            }
+            
+            .confirmation-header h1 {
+                font-size: 2rem;
+            }
+            
+            .confirmation-message {
+                font-size: 1rem;
+            }
+            
+            .btn-home {
+                width: 100%;
+            }
+        }
+
+        
+/* الرسوم المتحركة */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(67, 97, 238, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 20px rgba(67, 97, 238, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(67, 97, 238, 0);
+    }
+}
+
+/* التكيف مع الأجهزة المحمولة */
+@media (max-width: 768px) {
+    .email-verification-card {
+        padding: 30px 20px;
+    }
+    
+    .verification-success-title {
+        font-size: 1.8rem;
+    }
+    
+    .verification-success-message {
+        font-size: 1rem;
+    }
+    
+    .verification-action-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .btn-primary, .btn-outline-primary {
+        width: 100%;
+    }
+}

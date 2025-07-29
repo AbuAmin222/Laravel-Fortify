@@ -71,8 +71,8 @@
                             <div class="form-group">
                                 <label><i class="fas fa-user-tag"></i> نوع الحساب</label>
                                 <div class="account-type">
-                                    <input type="radio" name="accountType" id="user" value="user" checked>
-                                    <label for="user">
+                                    <input type="radio" name="accountType" id="client" value="client" checked>
+                                    <label for="client">
                                         <i class="fas fa-briefcase"></i>
                                         <span>عميل</span>
                                         <small>أبحث عن محترفين لتنفيذ مشاريعي</small>
@@ -94,7 +94,7 @@
                                 <label for="fullname"><i class="fas fa-user"></i> الاسم الكامل</label>
                                 <div class="input-with-icon">
                                     <i class="fas fa-user"></i>
-                                    <input type="text" id="fullname" name="full_name" class="form-control" placeholder="ادخل اسمك الكامل"
+                                    <input type="text" name="fullName" id="fullname" class="form-control" placeholder="ادخل اسمك الكامل"
                                         required>
                                 </div>
                             </div>
@@ -103,7 +103,7 @@
                                 <label for="email"><i class="fas fa-envelope"></i> البريد الإلكتروني</label>
                                 <div class="input-with-icon">
                                     <i class="fas fa-envelope"></i>
-                                    <input type="email" id="email" name="email" class="form-control"
+                                    <input type="email" name="email" id="email" class="form-control"
                                         placeholder="ادخل بريدك الإلكتروني" required>
                                 </div>
                             </div>
@@ -112,7 +112,7 @@
                                 <label for="password"><i class="fas fa-lock"></i> كلمة المرور</label>
                                 <div class="input-with-icon">
                                     <i class="fas fa-lock"></i>
-                                    <input type="password" id="password" name="password" class="form-control"
+                                    <input type="password" name="password" id="password" class="form-control"
                                         placeholder="أنشئ كلمة مرور قوية" required>
                                 </div>
                             </div>
@@ -121,7 +121,7 @@
                                 <label for="confirmPassword"><i class="fas fa-lock"></i> تأكيد كلمة المرور</label>
                                 <div class="input-with-icon">
                                     <i class="fas fa-lock"></i>
-                                    <input type="password" id="confirmPassword" name="confirmPassword" class="form-control"
+                                    <input type="password" name="confirmPassword" id="confirmPassword" class="form-control"
                                         placeholder="أعد إدخال كلمة المرور" required>
                                 </div>
                             </div>
@@ -133,35 +133,35 @@
                                 <h3><i class="fas fa-tags"></i> اختر مجالات تخصصك</h3>
                                 <div class="categories-grid">
                                     <div class="category-item">
-                                        <input type="checkbox" id="webDev" name="webDevelober">
+                                        <input type="checkbox" name="webDeveloper" id="webDev">
                                         <label for="webDev">تطوير الويب</label>
                                     </div>
                                     <div class="category-item">
-                                        <input type="checkbox" id="mobileApp" name="PhoneApp">
+                                        <input type="checkbox" name="phoneApplications" id="mobileApp">
                                         <label for="mobileApp">تطبيقات الموبايل</label>
                                     </div>
                                     <div class="category-item">
-                                        <input type="checkbox" id="graphicDesign" name="graphicDesign">
+                                        <input type="checkbox" name="graphicDesign" id="graphicDesign">
                                         <label for="graphicDesign">تصميم جرافيك</label>
                                     </div>
                                     <div class="category-item">
-                                        <input type="checkbox" id="contentWriting" name="writeContent">
+                                        <input type="checkbox" name="writingContent" id="contentWriting">
                                         <label for="contentWriting">كتابة المحتوى</label>
                                     </div>
                                     <div class="category-item">
-                                        <input type="checkbox" id="marketing" name="digitalMarkiting">
+                                        <input type="checkbox" name="degitalMarkiting" id="marketing">
                                         <label for="marketing">التسويق الرقمي</label>
                                     </div>
                                     <div class="category-item">
-                                        <input type="checkbox" id="translation" name="translate">
+                                        <input type="checkbox" name="translate" id="translation">
                                         <label for="translation">الترجمة</label>
                                     </div>
                                     <div class="category-item">
-                                        <input type="checkbox" id="videoEditing" name="videoMaker">
+                                        <input type="checkbox" name="videoEditor" id="videoEditing">
                                         <label for="videoEditing">مونتاج الفيديو</label>
                                     </div>
                                     <div class="category-item">
-                                        <input type="checkbox" id="seo" name="searchEngine">
+                                        <input type="checkbox" name="searchEngine" id="seo">
                                         <label for="seo">تحسين محركات البحث</label>
                                     </div>
                                 </div>
@@ -169,13 +169,13 @@
 
                             <div class="form-group">
                                 <label for="bio"><i class="fas fa-user-edit"></i> نبذة عنك</label>
-                                <textarea id="bio" class="form-control" rows="4" name="describtion"
+                                <textarea id="bio" class="form-control" rows="4"
                                     placeholder="اكتب نبذة مختصرة عنك وخبراتك المهنية"></textarea>
                             </div>
 
                             <div class="form-group">
                                 <label for="experience"><i class="fas fa-chart-line"></i> سنوات الخبرة</label>
-                                <select id="experience" class="form-control" name="yearExpert">
+                                <select id="experience" class="form-control">
                                     <option value="">اختر عدد سنوات الخبرة</option>
                                     <option value="0-1">أقل من سنة</option>
                                     <option value="1-3">1-3 سنوات</option>
@@ -207,7 +207,7 @@
                                                 <p>انقر أو اسحب الملف هنا</p>
                                                 <small>JPG, PNG, PDF - الحد الأقصى للحجم 5MB</small>
                                             </div>
-                                            <input type="file" id="idUpload" name="identity" accept=".jpg,.jpeg,.png,.pdf"
+                                            <input type="file" name="identity" id="idUpload" accept=".jpg,.jpeg,.png,.pdf"
                                                 style="display:none;">
                                             <div class="upload-preview" id="idPreview"></div>
                                         </div>
@@ -224,8 +224,8 @@
                                                 <p>انقر أو اسحب الملف هنا</p>
                                                 <small>JPG, PNG - الحد الأقصى للحجم 5MB</small>
                                             </div>
-                                            <input type="file" id="selfieUpload" accept=".jpg,.jpeg,.png"
-                                                style="display:none;" name="identityPerson">
+                                            <input type="file" name="identityPerson" id="selfieUpload" accept=".jpg,.jpeg,.png"
+                                                style="display:none;">
                                             <div class="upload-preview" id="selfiePreview"></div>
                                         </div>
                                     </div>
